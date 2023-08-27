@@ -3,12 +3,11 @@ console.log('Is this working?');
 let viz;
 
 //Add Share Link to Tableau Public in here
-const url = "https://public.tableau.com/views/PrisonDemographics_16913708178430/PopulationvsPrisonPopulation?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link";
-
+const url = "https://public.tableau.com/views/PopulationvsStatePrisonPopulation2/PopulationvsStatePrisonPopulationByRace?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link";
 const vizContainer = document.getElementById('vizContainer');
 const options = {
     hideTabs: true,
-    height: 1000,
+    height: 700,
     width: 1200,
     onFirstInteraction: function() {
         workbook = viz.getWorkbook();
