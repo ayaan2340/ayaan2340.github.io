@@ -7,8 +7,8 @@ const url = "https://public.tableau.com/views/TotalDrugArrestsforBlackPopulation
 const vizContainer = document.getElementById('vizContainer');
 const options = {
     hideTabs: true,
-    height: 700,
-    width: 1200,
+    height: document.getElementById("vizContainer").width,
+    width: document.getElementById("vizContainer").width,
     onFirstInteraction: function() {
         workbook = viz.getWorkbook();
         activeSheet = workbook.getActiveSheet();
